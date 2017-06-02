@@ -16,7 +16,9 @@
 	<script src="../../../resources/js/script.js"></script>
 	<script src="../../../resources/js/TMForm.js"></script>
 	<script src="../../../resources/js/modal.js"></script>
-	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqAN26LTI1rVsV2KSWALunfDjx3pwjyeA&callback=initMap"
+  type="text/javascript"></script>
+	<!-- <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script> -->
 	<!--[if (gt IE 9)|!(IE)]><!-->
 	<script src="../../../resources/js/jquery.mobile.customized.min.js"></script>
 	<script src="../../../resources/js/wow.js"></script>
@@ -201,7 +203,7 @@
 		google_api_map_init();
 		function google_api_map_init(){
 			var map;
-			var coordData = new google.maps.LatLng(parseFloat(40.6894388), parseFloat(-73.9036233,10)); 
+			var coordData = new google.maps.LatLng(parseFloat(37.501143), parseFloat(126.884598,10)); 
 
 			var styleArray = [
 				{"featureType":"water","stylers":[{"color":"#021019"}]},
@@ -221,7 +223,7 @@
 			 
 			function initialize() { 
 			  var mapOptions = { 
-				zoom: 12, 
+				zoom: 18, 
 				center: coordData, 
 				scrollwheel: false, 
 				styles: styleArray 

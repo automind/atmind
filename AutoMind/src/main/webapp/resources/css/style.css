@@ -55,7 +55,7 @@ h5 a:hover {
 										HEADER styles
 =========================================================*/
 #header {
-  padding: 20px 0;
+  padding: 20px 0px;
   background: url(../images/header_bg.jpg) no-repeat;
   background-size: cover;
   text-align: center;
@@ -84,17 +84,19 @@ h5 a:hover {
   margin-top: 15px;
 }
 #header h1 a {
-  font: 400 150px/115px 'Dorsa', sans-serif;
+  font: 300 95px/115px sans-serif;
   color: #ffffff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: inline-block;
   height: 177px;
+  letter-spacing: 30pt;
 }
 #header h1 a span {
   display: block;
   font: 30px/30px 'Dosis', sans-serif;
   margin-top: 28px;
   text-transform: none;
+  letter-spacing: 2.5pt;
 }
 #header nav {
   margin-top: 53px;
